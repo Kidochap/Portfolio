@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+<!-- Define a codificação de caracteres para suportar acentos -->
+<meta charset="UTF-8">
+
+<!-- Título da página que aparece na aba do navegador -->
+<title>Portfólio - Gabriel Grassi</title>
+
+<!-- Importação do Bootstrap para facilitar o layout e responsividade -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Importação do arquivo CSS personalizado -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- HEADER: parte superior do site com nome e profissão -->
+<header class="p-4 bg-dark text-white text-center">
+<h1>Gabriel Grassi</h1>
+<p>Game Developer | Produção de Música e SFX para Jogos</p>
+</header>
+
+
+<!-- NAVBAR: menu de navegação que leva para as seções da página -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+<div class="container">
+
+<!-- Nome do site exibido no menu -->
+<a class="navbar-brand" href="#">Portfólio</a>
+
+<!-- Lista de links de navegação -->
+<ul class="navbar-nav">
+
+<li class="nav-item">
+<a class="nav-link" href="#sobre">Sobre</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#projetos">Projetos</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#audio">Áudio</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#contato">Contato</a>
+</li>
+
+</ul>
+
+</div>
+</nav>
+
+
+<!-- MAIN: área principal onde fica o conteúdo do site -->
+<main class="container mt-5">
+
+
+<!-- SEÇÃO SOBRE: apresenta informações sobre o desenvolvedor -->
+<section id="sobre">
+
+<h2>Sobre mim</h2>
+
+<p>
+Sou desenvolvedor de jogos com foco na produção de áudio para games,
+incluindo trilhas sonoras e efeitos sonoros (SFX). Trabalho com ferramentas
+de desenvolvimento como Reaper e Soundtrap e tenho interesse em como o áudio
+contribui para a imersão e experiência do jogador.
+</p>
+
+</section>
+
+
+
+<!-- SEÇÃO PROJETOS: mostra projetos de jogos com imagens e descrição -->
+<section id="projetos" class="mt-5">
+
+<h2>Projetos</h2>
+
+<!-- "row" organiza os elementos em linhas usando o Bootstrap -->
+<div class="row g-4">
+
+<!-- PROJETO 1 -->
+<article class="col-md-6">
+
+<!-- Card usado para exibir o projeto -->
+<div class="card">
+
+<!-- Imagem representando o projeto -->
+<img src="images/projeto1.png"
+class="card-img-top"
+alt="Imagem do projeto 1">
+
+<div class="card-body">
+
+<!-- Nome do projeto -->
+<h5 class="card-title">Gourmet en Fuite</h5>
+
+<!-- Descrição do projeto -->
+<p class="card-text">
+Nesse projeto com 3 níveis fiz 3 músicas diferentes porém com loops parecidos
+apenas organizados de forma diferente.
+</p>
+
+</div>
+
+</div>
+
+</article>
+
+
+<!-- PROJETO 2 -->
+<article class="col-md-6">
+
+<div class="card">
+
+<img src="images/Projeto2.jpeg"
+class="card-img-top"
+alt="Imagem do projeto 2">
+
+<div class="card-body">
+
+<h5 class="card-title">P.I (Perversos Inúteis)</h5>
+
+<p class="card-text">
+Jogo de Terror fofo cooperativo do qual os jogadores devem passar por fases para encontrar sua primeira vitima.
+</p>
+
+</div>
+
+</div>
+
+</article>
+
+</div>
+
+</section>
+
+
+
+<!-- SEÇÃO DE ÁUDIO: apresenta trilhas sonoras e efeitos sonoros produzidos -->
+<section id="audio" class="mt-5">
+
+<h2>Áudio / Sound Design</h2>
+
+<p>
+Alguns exemplos de trilhas sonoras e efeitos sonoros produzidos
+para projetos de jogos.
+</p>
+
+<div class="row g-4">
+
+<!-- Cada "article" representa uma música ou trilha sonora -->
+<!-- Música 1 -->
+<article class="col-md-6">
+<div class="card p-3 shadow">
+
+<h5>Trilha Sonora - Level 1 de "Gourmet en Fuite"</h5>
+
+<!-- Player de áudio que permite ouvir a música -->
+<audio controls>
+<source src="Audio/Gourmet en fuite Level 1.mp3" type="audio/mpeg">
+</audio>
+
+<p class="mt-2">
+Trilha sonora criada para um jogo onde você controla um rato
+pegando queijo pela cozinha enquanto desvia de obstáculos.
+</p>
+
+</div>
+</article>
+
+
+<!-- Música 2 -->
+<article class="col-md-6">
+<div class="card p-3 shadow">
+
+<h5>Trilha Sonora - Level 2 de "Gourmet en Fuite"</h5>
+
+<audio controls>
+<source src="Audio/GourmetFuite LV2.mp3" type="audio/mpeg">
+</audio>
+
+<p class="mt-2">
+Segunda trilha sonora do jogo, mantendo a identidade musical
+mas com variações na organização dos loops.
+</p>
+
+</div>
+</article>
+
+
+<!-- Música 3 -->
+<article class="col-md-6">
+<div class="card p-3 shadow">
+
+<h5>Trilha sonora de Level 1 de P.I</h5>
+
+<audio controls>
+<source src="Audio/P.I_Fase1_Trilhos.wav" type="audio/mpeg">
+</audio>
+
+<p class="mt-2">
+Musica para um jogo de terror engraçado em um mapa de trems.
+</p>
+
+</div>
+</article>
+
+
+<!-- Música 4 -->
+<article class="col-md-6">
+<div class="card p-3 shadow">
+
+<h5>Trilha sonora de Level 2 de P.I</h5>
+
+<audio controls>
+<source src="Audio/P.I_Fase2_Acampamento.wav" type="audio/mpeg">
+</audio>
+
+<p class="mt-2">
+Musica para um jogo de terror engraçado em um mapa de acampamento.
+</p>
+
+</div>
+</article>
+
+
+<!-- Música 5 -->
+<article class="col-md-6">
+<div class="card p-3 shadow">
+
+<h5>Trilha sonora de Level 3 de P.I</h5>
+
+<audio controls>
+<source src="Audio/P.I_Fase3_Cemitério.wav" type="audio/mpeg">
+</audio>
+
+<p class="mt-2">
+Musica para um jogo de terror engraçado em um mapa de cemitério.
+</p>
+
+</div>
+</article>
+
+
+<!-- Música 6 -->
+<article class="col-md-6">
+<div class="card p-3 shadow">
+
+<h5>Trilha sonora do Main Menu de P.I</h5>
+
+<audio controls>
+<source src="Audio/P.I_MusicaMenuPrincipal.wav" type="audio/mpeg">
+</audio>
+
+<p class="mt-2">
+Musica de Main Menu para um jogo de terror engraçado.
+</p>
+
+</div>
+</article>
+
+</div>
+
+</section>
+
+
+
+<!-- SEÇÃO CONTATO: mostra informações para entrar em contato -->
+<section id="contato" class="mt-5">
+
+<h2>Contato</h2>
+
+<p>Email: biel.grassi.bg@gmail.com</p>
+
+</section>
+
+</main>
+
+
+
+<!-- FOOTER: parte inferior do site com direitos autorais -->
+<footer class="bg-dark text-white text-center p-4 mt-5">
+
+<p>© 2026 Gabriel Grassi</p>
+
+</footer>
+
+</body>
+</html>
